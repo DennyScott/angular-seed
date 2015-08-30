@@ -1,0 +1,17 @@
+@import 'scss/base/normalize';
+
+//Import all variables
+@import 'scss/utils/variables';
+@import 'scss/utils/mixins';
+
+//Import other libraries
+@import 'app/lib/foundation/scss/foundation';
+@import 'scss/components/login';
+
+@import 'scss/components/profileButton';
+
+@import 'scss/pages/profile/profile';
+@import 'scss/pages/profile/editProfile';
+@import 'scss/pages/profile/updatePassword';
+@import 'scss/pages/profile/sshKeys';
+@import 'scss/pages/profile/organizations';

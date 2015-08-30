@@ -1,0 +1,51 @@
+<div class="edit-profile">
+  <div class="row edit-profile-content">
+      <div class="upload-avatar">
+        Upload Avatar
+      </div>
+
+    <div class="user-image">
+      <button ng-click="vm.upload()"
+        class="profile-button">
+        Upload
+      </button>
+    </div>
+  </div>
+
+  <div class="row user-names">
+    <div class="columns small-6">
+      <label> First Name
+        <input type="text"
+          name="firstName"
+          ng-model="vm.user.firstName">
+      </label>
+    </div>
+
+    <div class="columns small-6">
+      <label> Last Name
+        <input type="text"
+          name="lastName"
+          ng-model="vm.user.lastName">
+      </label>
+    </div>
+  </div>
+
+  <div class="row email">
+    <div class="columns small-6">
+      <label> Email Address
+        <input type="text"
+          name="primaryEmail"
+          ng-model="vm.user.primaryEmail">
+      </label>
+    </div>
+  </div>
+
+  <div class="row submit">
+    <button type="button"
+      name="submit"
+      class="profile-button"
+      ng-click="vm.updateProfile()">
+      Update Profile
+    </button>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+.edit-profile {
+  background-color: $grey;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border: 1px solid $grey-border;
+
+  .edit-profile-content {
+    margin: 0;
+    display: flex;
+  }
+
+.user-image {
+  display:flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 0;
+}
+
+  .upload-avatar {
+    height: 13vw;
+    width: 13vw;
+    border: 2px dashed $light-grey;
+    margin: 0 1rem;
+  }
+}
+
+.user-names.row,
+.email.row,
+.submit.row {
+  margin: 0;
+  margin-top:20px;
+}
+
+.submit {
+  .profile-button {
+    margin-left: 1rem;
+  }
+}

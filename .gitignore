@@ -1,0 +1,23 @@
+# Specifies intentionally untracked files to ignore when using Git
+# http://git-scm.com/docs/gitignore
+
+node_modules/
+platforms/
+plugins/
+lib
+app/lib
+www/**/*
+!www/index.html
+tmp/
+*.DS_Store
+
+
+# Generatred Files
+app/components/generated
+app/css/style.min.css
+app/index.html
+
+# Test Output
+*.js.html
+test/coverage
+test/results

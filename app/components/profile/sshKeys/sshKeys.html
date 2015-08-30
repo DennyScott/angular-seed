@@ -1,0 +1,67 @@
+<div class="ssh-keys-page">
+  <div class="row profile-tab-title">
+    Current SSH Keys
+  </div>
+
+  <div class="row ssh-key"
+    ng-repeat="key in vm.userKeys">
+    <div class="name">
+      {{key.name}}
+    </div>
+
+    <div class="key">
+      {{key.key}}
+    </div>
+
+    <div class="dateAdded">
+      {{key.dateAdded}}
+    </div>
+    <div class="enabled">
+      <a class="enable-key" ng-click="toggleEnabled()">
+        <span ng-if="!key.isEnabled">Enable</span>
+        <span ng-if="key.isEnabled">Disable</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="add-key">
+    <div class="add-key-wrapper">
+      <div class="profile-tab-title">
+        Add SSH Key
+      </div>
+
+      <div class="row">
+        <div class="columns small-6">
+          <div class="key-title">
+            <label>Title
+              <input type="text"
+                name="key-title">
+            </label>
+          </div>
+          <div class="ssh-key-docs">
+            Need Help with our SSH Keys?
+            <a class="read-docs">
+              Read the documentation
+            </a>
+          </div>
+        </div>
+        <div class="columns small-6">
+          <label>Key
+            <textarea class="key-input"></textarea>
+          </label>
+        </div>
+      </div>
+
+      <div class="row submit-ssh-key">
+        <div class="right">
+          <button type="button"
+            class="profile-button"
+            name="add-ssh-key">
+            Add SSH Key
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

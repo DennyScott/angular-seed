@@ -1,0 +1,13 @@
+linters:
+  ColorKeyword:
+    enabled: false
+
+  ColorVariable:
+    enabled: false
+
+  Comment:
+    enabled: false
+
+  LeadingZero:
+    enabled: true
+    style: include_zero

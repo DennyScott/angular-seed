@@ -1,0 +1,23 @@
+- request:
+    url: ^/users/1$
+    method: get
+  response:
+    status: 200
+    headers:
+      content-type: application/json
+    file: user.json
+
+- request:
+    url: ^/api-token-auth/$
+    method: post
+  response:
+    status: 200
+    headers:
+      content-type: application/json
+    file: auth.json
+
+- request:
+    url: ^/users/app%40appnovation.com/reset-password$
+    method: get
+  response:
+    status: 200

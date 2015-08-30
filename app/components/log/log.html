@@ -1,0 +1,45 @@
+<div class="contain-to-grid sticky">
+  <nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="#">yourAppName</a></h1>
+      </li>
+      <!-- Remove the class "menu-icon" to get rid of menu icon.
+       Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon">
+        <a href="#">
+          <span>Menu</span>
+        </a>
+      </li>
+    </ul>
+
+    <section class="top-bar-section">
+      <!-- Right Nav Section -->
+      <ul class="right">
+        <li>
+          <a ui-sref="log.dashboard">
+            <i class="fa fa-dashboard"></i>
+          </a>
+        </li>
+
+        <li>
+          <a ui-sref="log.profile"
+            id="profile">
+            <i class="fa fa-user">
+            </i>
+          </a>
+        </li>
+
+        <li>
+          <a ng-click="vm.logout()"
+            id="logout">
+            <i class="fa fa-sign-out"></i>
+          </a>
+        </li>
+      </ul>
+
+      <!-- Left Nav Section -->
+    </section>
+  </nav>
+</div>
+<div ui-view="log"></div>

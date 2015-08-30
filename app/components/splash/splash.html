@@ -1,0 +1,17 @@
+Splash Page!
+<div class="row">
+  <div class="columns large-12">
+    <button ng-show="!vm.isLoggedIn"
+      class="button"
+      id="login"
+      ui-sref="login">
+      Log In
+    </button>
+    <button ng-show="vm.isLoggedIn"
+      id="dashboard"
+      class="button"
+      ui-sref="log.dashboard">
+      Dashboard
+    </button>
+  </div>
+</div>

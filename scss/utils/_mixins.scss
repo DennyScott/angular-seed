@@ -1,0 +1,23 @@
+@mixin centre {
+  @include vertically-align;
+  @include horizontally-align;
+}
+
+@mixin vertically-align($direction: "column") {
+  display: flex;
+  flex-direction: $direction;
+  align-items: center;
+}
+
+@mixin horizontally-align {
+  margin: {
+    left: auto;
+    right: auto;
+  }
+  text-align: center;
+}
+
+@mixin flex-width($width) {
+  flex: 0 0 $width;
+  max-width: $width;
+}

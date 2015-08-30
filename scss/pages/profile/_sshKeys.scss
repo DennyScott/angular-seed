@@ -1,0 +1,44 @@
+.ssh-keys-page {
+  div.row {
+    margin: 0;
+
+    &.ssh-key {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.ssh-key {
+  .enabled {
+    .enable-key {
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+  }
+}
+
+.add-key {
+  border: 1px solid $grey-border;
+  background-color: $grey;
+
+  .add-key-wrapper {
+    padding: 1rem;
+  }
+
+  .key-input {
+    height: 170px;
+  }
+
+  .ssh-key-docs {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+
+    .read-docs {
+      display: block;
+    }
+  }
+
+  .submit-ssh-key {
+    padding-right: 1rem;
+  }
+}

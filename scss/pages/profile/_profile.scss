@@ -1,0 +1,64 @@
+.profile-page {
+  @media #{$medium-up} {
+    margin-top: $top_page_buffer;
+  }
+
+  .user-information {
+    @include vertically-align($direction: row);
+
+    .user-avatar {
+      width: 10vw;
+      height: 10vw;
+      min-width: 75px;
+      min-height: 75px;
+      max-width: 125px;
+      max-height: 125px;
+    }
+
+    .user-name {
+      margin-left: 1rem;
+
+      h2 {
+        line-height: 1;
+      }
+    }
+  }
+
+  .profile-info {
+    margin-top: $top_page_buffer;
+
+    .tabs>dd {
+
+      &.active a{
+        background-color: $light-grey;
+        color: black;
+      }
+
+      a {
+        font-weight: bold;
+        text-align: left;
+        background-color: $dark-grey;
+        padding: 1rem 1rem;
+        color: white;
+      }
+    }
+
+    .tabs-content {
+      background-color: $light-grey;
+      padding: 2rem 4rem;
+
+      .content {
+        padding: .9375rem;
+        min-height: 15rem;
+
+        .profile-tab-title {
+          font-weight: bold;
+          margin-bottom: 1rem;
+          font-size: 1.1rem;
+        }
+
+      }
+    }
+  }
+
+}
